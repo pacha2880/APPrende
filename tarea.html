@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tarea</title>
+  <title>APPrende</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!-- JS, Popper.js, and jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -16,107 +16,47 @@
 </head>
 <body>
   <!--Aumentar NavBar-->
-  <nav class="navbar navbar-dark bg-dark  fixed-top bg-secondary">
-    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#hamburguesa" aria-controls="hamburguesa" aria-expanded="false" aria-label="Toggle navigation">
-      <!--<span class="navbar-toggler-icon"></span>-->
-      <span class="fas fa-list"></span>
-    </button>
-    <a class="navbar-brand text-white" href="#">APPrende</a>
-    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#kebab" aria-controls="kebab" aria-expanded="false" aria-label="Toggle navigation">
-        <!--<svg class="bi bi-three-dots-vertical" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-        </svg>-->
-        <span class="fas fa-ellipsis-v"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="hamburguesa">
-        <h2 class="text-white">Cuentas</h2>
-        <div class="dropdown-divider text-white"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-white" href="estudiante.html">APPrende</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarsExample03">
         <ul class="navbar-nav mr-auto">
-            <h3 class="text-white">Profesor</h3>
-            <li class="nav-item">
-                <span class="text-white">
-                    <svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                    </svg>
-                    <a href="" class="text-white">Profesor1</a>
-                </span>
-            </li>
-            <li class="nav-item">
-                <span class="text-white">
-                    <svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                    </svg>
-                    <a href="" class="text-white">Profesor2</a>
-                </span>
-            </li>
-            <div class="dropdown-divider text-white"></div>
-
-            <h3 class="text-white">Alumno</h3>
-            <li class="nav-item">
-                <span class="text-white">
-                    <svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                    </svg>
-                    <a href="" class="text-white">Alumno1</a>
-                </span>
-            </li>
-            <li class="nav-item">
-                <span class="text-white">
-                    <svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                    </svg>
-                    <a href="" class="text-white">Alumno2</a>
-                </span>
-            </li>
-            <div class="dropdown-divider text-white"></div>
-
-            <h3 class="text-white">Padre</h3>
-            <li class="nav-item">
-                <span class="text-white">
-                    <svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                    </svg>
-                    <a href="" class="text-white">Padre1</a>
-                </span>
-            </li>
-            <li class="nav-item">
-                <span class="text-white">
-                    <svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                    </svg>
-                    <a href="" class="text-white">Padre2</a>
-                </span>
-            </li>
-            <div class="dropdown-divider text-white"></div>
-
-            <button type="button" class="btn btn-dark">
-                <svg class="bi bi-person-plus-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
-                    <path fill-rule="evenodd" d="M13 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
-                </svg>
-                Añadir cuenta
-            </button>
+          <li class="nav-item">
+            <a class="nav-link" href="materias.html">Materias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calendario.html">Calendario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="curso.html">Curso</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calificaciones.html">Calificaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Configuración</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Acerda de Nosotros</a>
+          </li>
         </ul>
-    </div>
-
-    <div class="collapse navbar-collapse" id="kebab">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a href="" class="text-white"><h3>Acerda de Nosotros</h3></a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="text-white"><h3>Configuración</h3></a>
-            </li>
-        </ul>
+        <a class="btn btn-lg" href="perfil1.html">
+          <img src="imagenes/kid.png" height="24">
+          Pipo
+        </a>
+        <a class="text-secondary" href="index.html">logout</a>
+      </div>
     </div>
   </nav>
-  <div class="container">
 
-    <div class="row"><!--Nombre Tarea y estado-->
+  <div class="container">
+    <div class="alert alert-secondary" role="alert">
       <div class="col">
-        <h3 class="float-left">Tarea: Sumas 19/06</h3>
+        <h3 >Tarea: Sumas 19/06</h3>
       </div>
     </div>
     <div class="alert alert-success" role="alert">
@@ -133,31 +73,29 @@
       </div>
     </div>
     -->
-    <div class="panel">
-      <div class="panel-info">
-        <div class="panel-heading">
-            
-        </div>
-        <div class="panel-body">
-          <div class="clearfix"></div>
-            <ul class="media-list">
-              <li class="media">
-                <div class="media-body">
-                    <strong class="text-success">Profesora Carla</strong>
-                    <span class="text-muted float-right ">
-                        <small class="text-muted">30 min ago</small>
-                    </span>
-                    <p>Tu trabajo esta bien, pero te equivocaste en las sumas</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <textarea class="form-control" placeholder="Escribe un comentario" rows="3"></textarea>
-          <button type="button" class="btn btn-info pull-right">Enviar</button>
-        </div>
+    <div class="card">
+      <div class="card-header">
+        <h4> Comentarios </h4>
       </div>
-      
+      <div class="card-body">
+        <div class="clearfix"></div>
+        <ul class="media-list">
+          <li class="media">
+            <div class="media-body">
+                <strong class="text-success">Profesora Carla</strong>
+                <span class="text-muted float-right ">
+                    <small class="text-muted">30 min ago</small>
+                </span>
+                <p>Tu trabajo esta bien, pero te equivocaste en las sumas</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      </div>
+    <textarea class="form-control" placeholder="Escribe un comentario" rows="3"></textarea>
+    <button type="button" class="btn btn-info pull-right float-right">Enviar</button>
     </div>
+
   </div>
 </body>
 </html>
