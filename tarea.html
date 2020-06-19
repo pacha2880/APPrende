@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarea</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" >
+</head>
+<body>
+  <!--Aumentar NavBar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#hamburguesa" aria-controls="hamburguesa" aria-expanded="false" aria-label="Toggle navigation">
+      <!--<span class="navbar-toggler-icon"></span>-->
+      <span class="fas fa-list"></span>
+    </button>
+    <a class="navbar-brand text-white" href="#">Falseroom</a>
+    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#kebab" aria-controls="kebab" aria-expanded="false" aria-label="Toggle navigation">
+        <!--<svg class="bi bi-three-dots-vertical" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+        </svg>-->
+        <span class="fas fa-ellipsis-v"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="hamburguesa">
+        <h2 class="text-white">Cuentas</h2>
+        <ul class="navbar-nav mr-auto">
+            <h3 class="text-white">Profesor</h3>
+            <li class="nav-item">
+
+            </li>
+        </ul>
+    </div>
+
+    <div class="collapse navbar-collapse" id="kebab">
+
+    </div>
+</nav>
+  <div class="container">
+
+    <div class="row"><!--Nombre Tarea y estado-->
+      <div class="col">
+        <h3 class="float-left">Tarea: xasxas</h3>
+      </div>
+    </div>
+    <div class="alert alert-success" role="alert">
+      <p>La tarea ya ha sido revisada</p>
+    </div>
+    <!--
+    <div class="card">
+      <div class="card-body">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+      <div class="card-footer">
+        <h5 class="card-title">Tarea:asdasd</h5>
+        <p class="card-text">Este es el archivo que subiste</p>
+      </div>
+    </div>
+    -->
+    <div class="panel">
+      <div class="panel-info">
+        <div class="panel-heading">
+            
+        </div>
+        <div class="panel-body">
+          <div class="clearfix"></div>
+            <ul class="media-list">
+              <li class="media">
+                <div class="media-body">
+                    <strong class="text-success">Profesora Carla</strong>
+                    <span class="text-muted float-right ">
+                        <small class="text-muted">30 min ago</small>
+                    </span>
+                    <p>Tu trabajo esta bien, pero te equivocaste en las sumas</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <textarea class="form-control" placeholder="Escribe un comentario" rows="3"></textarea>
+          <button type="button" class="btn btn-info pull-right">Enviar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+<!-- JS, Popper.js, and jQuery -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</html>
