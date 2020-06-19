@@ -9,44 +9,114 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
 </head>
 <body>
   <!--Aumentar NavBar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+  <nav class="navbar navbar-dark bg-dark  fixed-top bg-secondary">
     <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#hamburguesa" aria-controls="hamburguesa" aria-expanded="false" aria-label="Toggle navigation">
       <!--<span class="navbar-toggler-icon"></span>-->
       <span class="fas fa-list"></span>
     </button>
-    <a class="navbar-brand text-white" href="#">Falseroom</a>
+    <a class="navbar-brand text-white" href="#">APPrende</a>
     <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#kebab" aria-controls="kebab" aria-expanded="false" aria-label="Toggle navigation">
         <!--<svg class="bi bi-three-dots-vertical" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
         </svg>-->
         <span class="fas fa-ellipsis-v"></span>
     </button>
-  
+    
     <div class="collapse navbar-collapse" id="hamburguesa">
         <h2 class="text-white">Cuentas</h2>
+        <div class="dropdown-divider text-white"></div>
+
         <ul class="navbar-nav mr-auto">
             <h3 class="text-white">Profesor</h3>
             <li class="nav-item">
-
+                <span class="text-white">
+                    <svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                    <a href="" class="text-white">Profesor1</a>
+                </span>
             </li>
+            <li class="nav-item">
+                <span class="text-white">
+                    <svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                    <a href="" class="text-white">Profesor2</a>
+                </span>
+            </li>
+            <div class="dropdown-divider text-white"></div>
+
+            <h3 class="text-white">Alumno</h3>
+            <li class="nav-item">
+                <span class="text-white">
+                    <svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                    <a href="" class="text-white">Alumno1</a>
+                </span>
+            </li>
+            <li class="nav-item">
+                <span class="text-white">
+                    <svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                    <a href="" class="text-white">Alumno2</a>
+                </span>
+            </li>
+            <div class="dropdown-divider text-white"></div>
+
+            <h3 class="text-white">Padre</h3>
+            <li class="nav-item">
+                <span class="text-white">
+                    <svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                    <a href="" class="text-white">Padre1</a>
+                </span>
+            </li>
+            <li class="nav-item">
+                <span class="text-white">
+                    <svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                    <a href="" class="text-white">Padre2</a>
+                </span>
+            </li>
+            <div class="dropdown-divider text-white"></div>
+
+            <button type="button" class="btn btn-dark">
+                <svg class="bi bi-person-plus-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                    <path fill-rule="evenodd" d="M13 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
+                </svg>
+                Añadir cuenta
+            </button>
         </ul>
     </div>
 
     <div class="collapse navbar-collapse" id="kebab">
-
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="" class="text-white"><h3>Acerda de Nosotros</h3></a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="text-white"><h3>Configuración</h3></a>
+            </li>
+        </ul>
     </div>
-</nav>
+  </nav>
   <div class="container">
 
     <div class="row"><!--Nombre Tarea y estado-->
       <div class="col">
-        <h3 class="float-left">Tarea: xasxas</h3>
+        <h3 class="float-left">Tarea: Sumas 19/06</h3>
       </div>
     </div>
     <div class="alert alert-success" role="alert">
