@@ -12,17 +12,23 @@ self.addEventListener('install', event =>{
                                     '/index.html',
                                     '/img/kid.png',
                                     '/img/fondoApp.jpg',
-                                    '/js/app.js',
-                                    '/pages/calendario.html',
-                                    '/pages/calificaciones.html',
                                     '/pages/curso.html',
                                     '/pages/estudiante.html',
                                     '/pages/materias.html',
+                                    '/img/icons/icon-72x72.png',
+                                    '/img/icons/icon-96x96.png',
+                                    '/img/icons/icon-128x128.png',
+                                    '/img/icons/icon-152x152.png',
+                                    '/img/icons/icon-512x512.png',
+                                    '/js/app.js',
+                                    '/pages/calendario.html',
+                                    '/pages/calificaciones.html',
                                     '/pages/perfil1.html',
                                     '/pages/tarea.html',
+                                    '/manifest.json'
                                 ]); 
                             });
-    const cacheInmutable = caches.open(CACHE_INMUTABLE_NAME)
+                            const cacheInmutable = caches.open(CACHE_INMUTABLE_NAME)
                             .then(cache =>{
                                 return cache.addAll([
                                     'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css',
@@ -33,39 +39,39 @@ self.addEventListener('install', event =>{
                                     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css'
                                 ]);
                             });                            
-    event.waitUntil(Promise.all([cacheInmutable,cacheStatic]));
-});
-
-self.addEventListener('activate', event =>{
-    //Para borrar cache vieja
-});
-
-self.addEventListener('fetch',event=>{
-    //Aqui se aplican las estrategias del cache
-    const resCache=caches.match(event.request)
-                    .then(res =>{
-                        if(res) return res;
-                        //No existe, tengo que ir a la web
-                        console.log('No existe', event.request.url);
-                        return fetch(event.request)
+                            event.waitUntil(Promise.all([cacheInmutable,cacheStatic]));
+                        });
+                        
+                        self.addEventListener('activate', event =>{
+                            //Para borrar cache vieja
+                        });
+                        
+                        self.addEventListener('fetch',event=>{
+                            //Aqui se aplican las estrategias del cache
+                            const resCache=caches.match(event.request)
+                            .then(res =>{
+                                if(res) return res;
+                                //No existe, tengo que ir a la web
+                                console.log('No existe', event.request.url);
+                                return fetch(event.request)
                                 .then(newRes =>{
                                     caches.open(CACHE_DYNAMIC_NAME)
-                                        .then(cache =>{
-                                            // cache.add(newRes);
-                                            cache.put(event.request,newRes);
-                                        });
-                                        //Debemos clonarlo para usarlo varias veces
+                                    .then(cache =>{
+                                        // cache.add(newRes);
+                                        cache.put(event.request,newRes);
+                                    });
+                                    //Debemos clonarlo para usarlo varias veces
                                     return newRes.clone();
                                 });
-                    });
-    event.respondWith(resCache);
-});
-//ESTA PARTE AUN NO ESTA FUNCIONANDO
-//SYNC: Cuando recuperamos la conexion a internet
-self.addEventListener('sync',event=>{
-    console.log('Recuperamos conexion');
-    console.log(event);
-    console.log(event.tag); 
+                            });
+                            event.respondWith(resCache);
+                        });
+                        //ESTA PARTE AUN NO ESTA FUNCIONANDO
+                        //SYNC: Cuando recuperamos la conexion a internet
+                        self.addEventListener('sync',event=>{
+                            console.log('Recuperamos conexion');
+                            console.log(event);
+                            console.log(event.tag); 
 });
 //PUSH: Manejar las push notifications
 
