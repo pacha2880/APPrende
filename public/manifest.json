@@ -1,7 +1,7 @@
 {
   "name": "APPrende",
   "short_name": "APPrende Bolivia",
-  "start_url": "/APPrende/public",
+  "start_url": "/",
   "lang": "es",
   "background_color": "#4d7c8c",
   "theme_color": "#5990a3",
