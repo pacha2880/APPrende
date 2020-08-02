@@ -14,7 +14,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <title>APPrende</title>
 </head>
 <body>
@@ -119,11 +121,20 @@
     <div class="container text-center">
         <form class="form-signin">
             <!-- <img class="mb-4" src="https://scontent.fcbb1-1.fna.fbcdn.net/v/t1.0-9/p960x960/104432162_3154251411305075_2973637176868261707_o.jpg?_nc_cat=105&_nc_sid=85a577&_nc_ohc=APi-fKe4E5UAX9Gn9SX&_nc_ht=scontent.fcbb1-1.fna&_nc_tp=6&oh=95aae0e6bd330ca5e29870d1e51ea14f&oe=5F10C2F3" alt="" width="150" height="150"> -->
-            <h1 class="h3 mb-3 font-weight-normal">Por favor conectese a internet para acceder a este lugar</h1>
-            
+            <h1 class="h3 mb-3 font-weight-normal">Inicio de Sesión</h1>
+            <label for="inputEmail" class="sr-only">Correo Electrónico</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Correo Electrónico" required autofocus>
+            <label for="inputPassword" class="sr-only">Contrasña</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Contrasña" required>
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Recordarme
+              </label>
+            </div>
+            <a class="btn btn-lg btn-primary btn-block" type="submit" href="/pages/estudiante.html">Iniciar Sesión</a>
         </form>
     </div>
-    <script src="../js/app.js"></script>
+    <script src="/js/app.js"></script>
     <script>
         $(document).mouseup(function(e){
             var container = $("#kebab");
