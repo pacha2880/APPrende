@@ -4,7 +4,7 @@ const CACHE_INMUTABLE_NAME = 'inmutable-v1';
 
 const CACHE_STATIC_FILE =[
                             // '/',//descomentar en localhost
-                            'public/index.html',
+                            'index.html',
                             'img/favicon.ico',
                             'css/style.css',
                             'img/kid.png',
