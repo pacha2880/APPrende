@@ -1,5 +1,5 @@
 var url = window.location.href;
-var swLocation = '/APPrende/sw.js';
+var swLocation = '/APPrende/public/sw.js';
 
 if(navigator.serviceWorker){
    if(url.includes('localhost') || url.includes('127.')) {
@@ -10,3 +10,14 @@ if(navigator.serviceWorker){
    }
    
 }
+
+function isOnline(){
+   if(navigator.onLine){
+      
+   }else{
+      
+   }
+}
+window.addEventListener('online',isOnline);
+window.addEventListener('offline',isOnline);
+isOnline();

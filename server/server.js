@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 app.use(express.static(publicPath));
 
 const routes = require('./routes');
-app.use('/apprende', routes );
+app.use('/apiApprende', routes );
 
 
 
