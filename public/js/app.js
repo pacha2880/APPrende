@@ -7,8 +7,7 @@ if(navigator.serviceWorker){
    }
    else{
       navigator.serviceWorker.register(swLocation);
-   }
-   
+   }   
 }
 
 function isOnline(){
