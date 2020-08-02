@@ -1,6 +1,7 @@
 var url = window.location.href;
 var swLocation = '/APPrende/public/sw.js';
 
+console.log(url);
 if(navigator.serviceWorker){
    if(url.includes('localhost') || url.includes('127.')) {
       navigator.serviceWorker.register('/sw.js');
