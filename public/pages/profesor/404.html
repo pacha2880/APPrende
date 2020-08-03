@@ -8,15 +8,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="js/libs/plugins/mdtoast.min.css">
-    <link rel="manifest" href="manifest.json">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/style.css">
     <title>APPrende</title>
 </head>
 <body>
@@ -119,22 +118,13 @@
     </nav>
 
     <div class="container text-center">
-        <form class="form-signin" action="apiApprende/logIn" method="POST" >
+        <form class="form-signin">
             <!-- <img class="mb-4" src="https://scontent.fcbb1-1.fna.fbcdn.net/v/t1.0-9/p960x960/104432162_3154251411305075_2973637176868261707_o.jpg?_nc_cat=105&_nc_sid=85a577&_nc_ohc=APi-fKe4E5UAX9Gn9SX&_nc_ht=scontent.fcbb1-1.fna&_nc_tp=6&oh=95aae0e6bd330ca5e29870d1e51ea14f&oe=5F10C2F3" alt="" width="150" height="150"> -->
-            <h1 class="h3 mb-3 font-weight-normal">Inicio de Sesión</h1>
-            <label for="inputEmail" class="sr-only">Correo Electrónico</label>
-            <input type="email" name="email"id="inputEmail" class="form-control" placeholder="Correo Electrónico" required autofocus>
-            <label for="inputPassword" class="sr-only">Contraseña</label>
-            <input type="password" name="pass" id="inputPassword" class="form-control" placeholder="Contraseña" required>
-            <div class="checkbox mb-3">
-              <label>
-                <input type="checkbox" value="remember-me"> Recordarme
-              </label>
-            </div>
+            <h1 class="h3 mb-3 font-weight-normal">Por favor conectese a internet para acceder a este lugar</h1>
             
-            <input class="btn btn-lg btn-primary btn-block" type="submit" value = "Iniciar Sesión">
         </form>
     </div>
+    <script src="../js/app.js"></script>
     <script>
         $(document).mouseup(function(e){
             var container = $("#kebab");
@@ -150,9 +140,6 @@
                 container.collapse('hide');
             }
         });
-        </script>
-    
-    <script type="text/javascript" src="js/libs/plugins/mdtoast.min.js"></script>   
-    <script src="js/app.js"></script>
+    </script>
 </body>
 </html>

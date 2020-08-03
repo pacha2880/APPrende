@@ -3,7 +3,7 @@ const CACHE_DYNAMIC_NAME = 'dynamic-v1';
 const CACHE_INMUTABLE_NAME = 'inmutable-v1';
 
 const CACHE_STATIC_FILE =[
-                            '/',//descomentar en localhost
+                            '/',
                             'index.html',
                             'img/favicon.ico',
                             'css/style.css',
