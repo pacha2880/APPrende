@@ -30,7 +30,7 @@ router.post('/logIn',function(req,res){
   if(found.rol==0){
     res.redirect('../../pages/profesor/profesor.html');
   }else if(found.rol==1){
-    res.redirect('../../pages/estudiante.html');
+    res.redirect('../../pages/estudiante/estudiante.html');
   }
 })
 module.exports = router;
