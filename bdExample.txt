@@ -1,0 +1,45 @@
+usuarios = [
+    {
+      email : 'oscarlopez@gmail.com',
+      pass : '123456',
+      rol:1
+    },
+    {
+      email : 'juanPablo@gmail.com',
+      pass : '12345678',
+      rol:0
+    },
+    {
+      email : 'rodrigo@gmail.com',
+      pass : '1234567890',
+      rol:1
+    }
+];
+
+profesor = [
+  {
+    materias : ['leanguaje']
+  }
+]
+materia = [
+  {
+    nombre: 'Lenguaje',
+    tareas: []
+  }
+]
+tarea = [
+  {
+    nombre : 'suma',
+    estado : 'entregado' (pendiente, entregado, no entregado),
+    fecha : '11-10-20',
+    documento: tareasumas.pdf,
+    comentarios: 'esta mal'
+  }
+]
+alumno = [
+  {
+    nombre : 'Juan',
+    curso : '4to primaria',
+    materias : []
+  }
+]
