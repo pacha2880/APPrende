@@ -23,6 +23,7 @@ const usuarios = [
 router.get('/', function (req, res) {
   res.json('Obteniendo mensajes');
 });
+
 router.post('/logIn',function(req,res){  
 	const email = req.body.email;
   const password = req.body.pass;
