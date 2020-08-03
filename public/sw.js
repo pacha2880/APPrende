@@ -4,28 +4,28 @@ const CACHE_INMUTABLE_NAME = 'inmutable-v1';
 
 const CACHE_STATIC_FILE =[
                             // '/',
-                            // 'index.html',
+                            'index.html',
                             'img/favicon.ico',
                             'css/style.css',
                             'img/kid.png',
                             'img/fondoApp.jpg',
-                            'pages/curso.html',
-                            'pages/estudiante.html',
-                            'pages/materias.html',
-                            'img/icons/icon-72x72.png',
-                            'img/icons/icon-96x96.png',
-                            'img/icons/icon-128x128.png',
-                            'img/icons/icon-152x152.png',
-                            'img/icons/icon-512x512.png',
+                            // 'pages/curso.html',
+                            // 'pages/estudiante.html',
+                            // 'pages/materias.html',
+                            // 'img/icons/icon-72x72.png',
+                            // 'img/icons/icon-96x96.png',
+                            // 'img/icons/icon-128x128.png',
+                            // 'img/icons/icon-152x152.png',
+                            // 'img/icons/icon-512x512.png',
                             'js/app.js',
-                            'pages/calendario.html',
-                            'pages/calificaciones.html',
-                            'pages/perfil1.html',
-                            'pages/tarea.html',
+                            // 'pages/calendario.html',
+                            // 'pages/calificaciones.html',
+                            // 'pages/perfil1.html',
+                            // 'pages/tarea.html',
                             'manifest.json',
-                            'pages/404.html',
-                            '/js/libs/plugins/mdtoast.min.css',
-                            '/js/libs/plugins/mdtoast.min.js'
+                            // 'pages/404.html',
+                            // '/js/libs/plugins/mdtoast.min.css',
+                            // '/js/libs/plugins/mdtoast.min.js'
                         ];
 const CACHE_DYNAMIC_FILE = [
                                 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css',
@@ -46,7 +46,7 @@ self.addEventListener('install', event =>{
                             .then(cache =>{
                                 return cache.addAll(CACHE_DYNAMIC_FILE);
                             });                            
-    event.waitUntil(Promise.all([cacheStatic]));
+    event.waitUntil(Promise.all([cacheStatic,cacheInmutable]));
 });
                         
 self.addEventListener('activate', event =>{
