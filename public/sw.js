@@ -40,7 +40,7 @@ self.addEventListener('install', event =>{
     //Aqui se almacenan los datos en las caches estaticas e inmutables
     const cacheStatic = caches.open(CACHE_STATIC_NAME)
                             .then(cache =>{
-                                return cache.addAll(CACHE_STATIC_FILE); 
+                                return cache.addAll(CACHE_STATIC_FILE).catch(err=>{console.log(err)}); 
                             });
     const cacheInmutable = caches.open(CACHE_INMUTABLE_NAME)
                             .then(cache =>{
