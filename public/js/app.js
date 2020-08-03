@@ -1,3 +1,6 @@
+// importScripts('libs/plugins/mdtoast.min.js');
+
+
 var url = window.location.href;
 var swLocation = '/APPrende/public/sw.js';
 
@@ -13,9 +16,17 @@ if(navigator.serviceWorker){
 
 function isOnline(){
    if(navigator.onLine){
-      
+      mdtoast('Online',{
+         interaction:true,
+         interactionTimeout:1500,
+         actionText: 'OK'
+      });
    }else{
       
+      mdtoast('Sin conexion a internet',{
+         interaction:true,
+         actionText: 'OK'
+      });
    }
 }
 window.addEventListener('online',isOnline);

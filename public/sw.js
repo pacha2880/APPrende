@@ -3,7 +3,7 @@ const CACHE_DYNAMIC_NAME = 'dynamic-v1';
 const CACHE_INMUTABLE_NAME = 'inmutable-v1';
 
 const CACHE_STATIC_FILE =[
-                            // '/',//descomentar en localhost
+                            '/',//descomentar en localhost
                             'index.html',
                             'img/favicon.ico',
                             'css/style.css',
@@ -23,7 +23,9 @@ const CACHE_STATIC_FILE =[
                             'pages/perfil1.html',
                             'pages/tarea.html',
                             'manifest.json',
-                            'pages/404.html'
+                            'pages/404.html',
+                            '/js/libs/plugins/mdtoast.min.css',
+                            '/js/libs/plugins/mdtoast.min.js'
                         ];
 const CACHE_DYNAMIC_FILE = [
                                 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css',
