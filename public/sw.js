@@ -42,12 +42,12 @@ self.addEventListener('install', event =>{
                             .then(cache =>{
                                 return cache.addAll(CACHE_STATIC_FILE); 
                             });
-                            const cacheInmutable = caches.open(CACHE_INMUTABLE_NAME)
+    const cacheInmutable = caches.open(CACHE_INMUTABLE_NAME)
                             .then(cache =>{
                                 return cache.addAll(CACHE_DYNAMIC_FILE);
                             });                            
-                            event.waitUntil(Promise.all([cacheInmutable,cacheStatic]));
-                        });
+    event.waitUntil(Promise.all([cacheStatic]));
+});
                         
 self.addEventListener('activate', event =>{
     //Para borrar cache vieja
