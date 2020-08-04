@@ -98,7 +98,7 @@
                 .then(res => res.json())
                 .then(tareas =>{
                         tareas.array.forEach(res => {  
-                            crearTareaHTML(res.nombreTarea,res.fechaLimite,res.descripcion);
+                            crearTareaHTML(res.nombre,res.fechaLimite,res.descripcion);
                         });
                 });//NombreTarea --fecha Limite -- descripcion 
         }
