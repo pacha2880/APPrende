@@ -62,7 +62,7 @@
   <div>
       
     <button type="button" class="btn btn-info" style="margin-bottom: 10px;" onclick="crearTarea()">Crear tarea</button>
-    <ul class="list-group">
+    <ul class="list-group" id = "listaTareas">
         <li>
             <div id = "tarea" onclick="clickTarea()"class=" list-group-item " >
               <div class="card-header">Tarea Sumas</div>
@@ -91,5 +91,32 @@
     function crearTarea(){
         window.location.href = "crearTarea.html";
     }
+   //esta funcion solo devolvera todas las tareas ordenadas de mas reciente
+   //de la materia matematicas
+    function cargarTareas(){       
+            fetch('../../apiApprende/tareasMateria')
+                .then(res => res.json())
+                .then(tareas =>{
+                        tareas.array.forEach(res => {  
+                            crearTareaHTML(res.nombreTarea,res.fechaLimite,res.descripcion);
+                        });
+                });//NombreTarea --fecha Limite -- descripcion 
+        }
+    function crearTareaHTML(nombreTarea,fechaLimite,descripcion) {
+        var content = `
+        <li>
+            <div id = "tarea" onclick="clickTarea()"class=" list-group-item " >
+              <div class="card-header">${nombreTarea}</div>
+              <div class="card-body">
+              <h5 class="card-title">${nombreTarea} ${fechaLimite}</h5>
+              <p class="card-text">${descripcion}</p>
+              </div>
+          </div>
+        </li>
+        `;
+        const lista = document.getElementById('listaTareas');
+        lista.innerHTML = lista;
+    }
+    cargarTareas();
 </script>
 </html>

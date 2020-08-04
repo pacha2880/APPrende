@@ -95,5 +95,18 @@
         // document.getElementById("tarea");
         window.location.href = "tarea.html";
     }
+    //esta funcion solo devolvera el nombre de todas las tareas de la materia ordenadas de mas reciente
+   function cargarTareas(){
+        fetch('../../apiApprende/tareasAlumno')
+            .then(res => res.json())
+            .then(tareas =>{
+                    tareas.array.forEach(tarea => {  
+                        crearTareaHTML(tarea.nombre,tarea.fechaLimite,tarea.descripcion,tarea.estado);
+                    });
+            });//NombreTarea --fecha Limite -- descripcion -- estado
+    }
+    function crearTareaHTML(
+        
+    )
 </script>
 </html>
