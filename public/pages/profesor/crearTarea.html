@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="../../css/style.css">
-    <title>APPrende</title>
+    <link rel="stylesheet" href="../../css/styleP.css">
+    <title>Crear tarea</title>
 </head>
 <body>
     
@@ -116,30 +116,28 @@
             </ul>
         </div>
     </nav>
+<div class="container " >
+    <div class=" row">
+        <div class="col" style="padding-top: 10px; padding-bottom: 10px; background-color: #ffffff!important;">
 
-    <div class="container text-center">
-        <form class="form-signin">
-            <!-- <img class="mb-4" src="https://scontent.fcbb1-1.fna.fbcdn.net/v/t1.0-9/p960x960/104432162_3154251411305075_2973637176868261707_o.jpg?_nc_cat=105&_nc_sid=85a577&_nc_ohc=APi-fKe4E5UAX9Gn9SX&_nc_ht=scontent.fcbb1-1.fna&_nc_tp=6&oh=95aae0e6bd330ca5e29870d1e51ea14f&oe=5F10C2F3" alt="" width="150" height="150"> -->
-            <h1 class="h3 mb-3 font-weight-normal">Por favor conectese a internet para acceder a este lugar</h1>
-            
-        </form>
+            <form action="../../apiApprende/crearTarea" method="POST">
+                <div class="form-group">
+                  <label for="nombreTarea">Nombre Tarea</label>
+                  <input type="text" class="form-control" id="nombreTarea">
+                  <label for="fecha">Fecha de presentacion</label>
+                  <input type="time" class="form-control" id="fecha">
+                </div>
+               
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Descripcion</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                
+                <input class="btn btn-lg btn-primary btn-block" type="submit" value = "Crear"> 
+              </form>
+        </div>
     </div>
-    <script src="../js/app.js"></script>
-    <script>
-        $(document).mouseup(function(e){
-            var container = $("#kebab");
-            // if the target of the click isn't the container nor a descendant of the container
-            if (!container.is(e.target) && container.has(e.target).length === 0){
-                container.collapse('hide');
-            }
-        });
-        $(document).mouseup(function(e){
-            var container = $("#hamburguesa");
-            // if the target of the click isn't the container nor a descendant of the container
-            if (!container.is(e.target) && container.has(e.target).length === 0){
-                container.collapse('hide');
-            }
-        });
-    </script>
+</div>
+    
 </body>
 </html>

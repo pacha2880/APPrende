@@ -60,6 +60,8 @@
     </div>
   </nav>
   <div>
+      
+    <button type="button" class="btn btn-info" style="margin-bottom: 10px;" onclick="crearTarea()">Crear tarea</button>
     <ul class="list-group">
         <li>
             <div id = "tarea" onclick="clickTarea()"class=" list-group-item " >
@@ -85,6 +87,9 @@
     function clickTarea(){
         // document.getElementById("tarea");
         window.location.href = "tareasAlumnos.html";
+    }
+    function crearTarea(){
+        window.location.href = "crearTarea.html";
     }
 </script>
 </html>
