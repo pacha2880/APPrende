@@ -52,18 +52,42 @@
           </li>
         </ul>
         <a class="btn btn-lg" href="perfil1.html">
-          <img src="../img/kid.png" height="24">
+          <img src="../../img/kid.png" height="24">
           Pipo
         </a>
         <a class="text-secondary" href="../index.html">logout</a>
       </div>
     </div>
   </nav>
-    <div class="container">
-        <div class="alert alert-secondary" role="alert">
-          <h3> Curso (los compañeros de Pipo) </h3>
-        </div>
-    </div>
-    
+  <div>
+    <ul class="list-group">
+        <li>
+            <div id = "tarea" onclick="clickTarea()"class=" list-group-item " >
+              <div class="card-header list-group-item-success">Tarea Sumas</div>
+              <div class="card-body">
+              <h5 class="card-title">Tarea de sumas 20-10-20   Oscar Lopez</h5>
+              <p class="card-text">Esta tarea debe ser enviada antes de ... y vale 20 pts</p>
+              </div>
+          </div>
+        </li>
+        <li>
+            <div id = "tarea" onclick="clickTarea()"class=" list-group-item " >
+              <div class="card-header list-group-item-info">Tarea Sumas</div>
+              <div class="card-body">
+              <h5 class="card-title ">Tarea de sumas 20-10-20   Rodrigo Salguero</h5>
+              <p class="card-text">Esta tarea debe ser enviada antes de ... y vale 20 pts</p>
+              </div>
+          </div>
+        </li>
+    </ul>
+
+  </div>
+  
 </body>
+<script>
+    function clickTarea(){
+        // document.getElementById("tarea");
+        window.location.href = "tarea.html";
+    }
+</script>
 </html>
